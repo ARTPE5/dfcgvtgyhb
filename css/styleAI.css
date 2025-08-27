@@ -4,6 +4,15 @@
   margin: 0;
   padding: 0;
 }
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
 body {
   font-family: 'Lato', sans-serif;
  /* background: linear-gradient(135deg, #121212, #1e1e2f);*/
@@ -82,7 +91,7 @@ body {
   background: linear-gradient(90deg, #956c36, #c7914a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+  /* text-transform: uppercase;*/
   margin-bottom: 20px;
   animation: glowText 2s ease-in-out infinite alternate;
 }
