@@ -261,7 +261,7 @@ footer {
 /* ===== Typewriter Effect ===== */
 .typewriter h1 {
   overflow: hidden;
-  border-right: 3px solid #ffa07a;
+/*  border-right: 3px solid #ffa07a; */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 2px;
@@ -377,5 +377,6 @@ footer {
       
       
     }
+
 
 
