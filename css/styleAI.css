@@ -337,14 +337,60 @@ footer {
 }
 
 
+/* karuselli hommat */
+.carousel{
+  display: flex;
+  width: 90%;
+  overflow-x: auto;
+  margin: 100px auto;
+  /* border: 5px solid red; */
+  scroll-snap-type: x mandatory;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-right: 1em;
+  animation: spin 30s infinite linear;
+}
+
+.slide{
+  flex: 0 0 5em;
+  height: 5em;
+ padding: 1em;
+ background: #121212;
+ font-size: 3rem;
+  border-radius: .2em;
+  text-align: center;
+  align-content: center;
+}
+
+.carousel:hover .group,
+.group:hover,
+.group:focus-within,
+.slide:hover {
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+}
 
 
 
+@keyframes spin {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 
+/* loppu karuselli */
   .bg-rotator {
     
      
-      animation: changeBg 15s infinite;
+      animation: changeBg 20s infinite;
      
     }
 
@@ -359,9 +405,10 @@ footer {
   
       @keyframes changeBg {
         0%   { background-image: url("../kuvat/257.JPG"); }
-        20%  { background-image: url("../kuvat/Katti.jpg"); }
-        40%  { background-image: url("../kuvat/puu.jpg"); }
-        80% { background-image: url("../kuvat/nalle.jpg");}
+        15%  { background-image: url("../kuvat/Katti.jpg"); }
+        35%  { background-image: url("../kuvat/puu.jpg"); }
+        50% { background-image: url("../kuvat/nalle.jpg");}
+        70% { background-image: url("../kuvat/VANTEET.jpg");}
         100% { background-image: url("../kuvat/257.JPG");}
       }
 
